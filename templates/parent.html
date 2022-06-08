@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+    {% block head %}
+       <link href="{{ url_for('static', filename='me.css') }}" rel="stylesheet"/>
+        <meta charset="utf-8">
+        <title>O mnie 1</title>
+    {%endblock%}
+        </head>
+    <body>
+      <h1>
+        Witaj na stonie domwej! 
+      </h1>
+      <image src ="https://th.bing.com/th/id/R.1b46540d0d1374bbd59992f6151edfed?rik=pIOcFLE1t4bqtA&pid=ImgRaw&r=0 style="  width="400" height="400">
+      <div id="content">{% block content %}{% endblock %}</div>
+    </body>
+</html>
+
+
+
+
+
+
+
